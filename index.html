@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Grid</title>
+</head>
+<body>
+<div class="grid-container">
+    <div class="grid-item">
+        <img src="images/img.png" alt="">
+    </div>
+    <div class="grid-item">
+        <img src="images/img.png" alt="">
+    </div>
+    <div class="grid-item">
+        <img src="images/img.png" alt="">
+    </div>
+    <div class="grid-item">
+        <img src="images/img.png" alt="">
+    </div>
+    <div class="grid-item">
+        <img src="images/img.png" alt="">
+    </div>
+    <div class="grid-item">
+        <img src="images/img.png" alt="">
+    </div>
+</div>
+</body>
+</html>
+<style>
+    .grid-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 10px;
+    }
+
+    .grid-item {
+        display: flex;
+        align-items: center;
+        margin: 10px;
+    }
+
+    .grid-item img {
+        width: 100%;
+    }
+</style>
